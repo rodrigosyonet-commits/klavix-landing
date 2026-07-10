@@ -5,225 +5,51 @@
   <title>KlaviX - Control de llaves vehiculares</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    /* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <!-- FUENTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #ffffff;
-  color: #111827;
-  line-height: 1.6;
-}
-
-/* ===== CONTAINER ===== */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-/* ===== HERO ===== */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  min-height: 85vh;
-  gap: 40px;
-}
-
-/* ===== TEXT ===== */
-h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  color: #4b5563;
-}
-
-/* ===== BUTTONS ===== */
-.btn {
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.primary {
-  background: linear-gradient(135deg, #22c55e, #ef4444);
-  color: white;
-  border: none;
-}
-
-.primary:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-.secondary {
-  background: transparent;
-  border: 1px solid #d1d5db;
-  color: #111827;
-}
-
-.secondary:hover {
-  background: #f3f4f6;
-}
-
-/* ===== MOCKUP ===== */
-.mockup {
-  width: 100%;
-  height: 300px;
-  background: linear-gradient(135deg, #22c55e, #ef4444);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 600;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-/* ===== SECTIONS ===== */
-.section {
-  padding: 80px 0;
-}
-
-.section.dark {
-  background: #111827;
-  color: white;
-}
-
-.section.dark p {
-  color: #9ca3af;
-}
-
-/* ===== GRID ===== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-/* ===== CARDS ===== */
-.card {
-  padding: 30px;
-  border-radius: 14px;
-  background: white;
-  border: 1px solid #e5e7eb;
-  transition: all 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-/* ===== LIST ===== */
-ul {
-  margin-top: 20px;
-}
-
-li {
-  margin-bottom: 12px;
-  font-size: 18px;
-  color: #4b5563;
-}
-
-/* ===== CTA BLOCK ===== */
-.cta {
-  text-align: center;
-}
-
-/* ===== NAV (opcional después) ===== */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 34px;
-  }
-
-  .mockup {
-    height: 220px;
-  }
-}
-  </style>
-</head>
-
-<body>
-
-<div class="container hero">
-  <div>
+!-- NAV -->
+<header class="nav container">
+  <div class="logo">KlaviX</div>
+  <nav>
+    <a href="#producto">Producto</aef="#beneficios">Beneficios</ref="#demo" class="btn small primary">Demo>
+<section class="hero container">
+  <div class="hero-text">
     <h1>Controla cada llave de tu agencia en tiempo real</h1>
-    <p>KlaviX elimina la pérdida de llaves y te dice quién tiene cada vehículo, cuándo y por cuánto tiempo.</p>
+    <p>Evita pérdidas, mejora la operación y asegura cada vehículo.</p>
 
-    <button class="btn primary">Solicitar demo</button>
-    <button class="btn secondary">Ver cómo funciona</button>
-  </div>
-
-  <div class="mockup">
+    <div class="cta-buttons">
+      <a href="#demo" class="btn primary">Solicitar democlass="btn secondary">Ver cómo funciona</a>
+="mockup">
     Dashboard / Gabinete
   </div>
-</div>
+</section>
 
-<div class="container section">
+<!-- PROBLEMA -->
+<section class="section container">
   <h2>¿Te suena familiar?</h2>
-  <ul>
-    <li>Llaves perdidas cada semana</li>
-    <li>Clientes esperando</li>
-    <li>Nadie sabe quién tiene el vehículo</li>
-  </ul>
-</div>
 
-<div class="container section">
-  <h2>La solución</h2>
+  <ul>
+    <li>Llaves perdidas o mal ubicadas</li>
+    <li>Tiempo perdido buscando vehículos</li>
+    <li>Clientes esperando en servicio</li>
+    <li>Falta de control sobre accesos</li>
+  </ul>
+</section>
+
+<!-- SOLUCIÓN -->
+<section id="producto" class="section container">
+  <h2>La solución KlaviX</h2>
 
   <div class="grid">
     <div class="card">
       <h3>Gabinete inteligente</h3>
-      <p>Protección física de llaves</p>
+      <p>Custodia física segura de llaves</p>
     </div>
 
     <div class="card">
       <h3>Software en la nube</h3>
-      <p>Control desde cualquier lugar</p>
+      <p>Control desde cualquier dispositivo</p>
     </div>
 
     <div class="card">
@@ -231,12 +57,40 @@ li {
       <p>Registro automático y trazabilidad</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="container section">
+<!-- BENEFICIOS -->
+<section id="beneficios" class="section container">
+  <h2>Impacto en tu operación</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Ventas</h3>
+      <p>Test drives sin retrasos</p>
+    </div>
+
+    <div class="card">
+      <h3>Servicio</h3>
+      <p>Vehículos protegidos siempre</p>
+    </div>
+
+    <div class="card">
+      <h3>Operación</h3>
+      <p>Control y auditoría total</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="demo" class="section cta">
   <h2>Agenda una demo</h2>
-  <button class="btn primary">Solicitar demo</button>
-</div>
+  <p>Descubre cómo KlaviX transforma tu operación</p>
 
-</body>
-</html>
+  <a href="https://wa.me/5210000000000" target="_blank" class="btn primary
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 KlaviX - Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script
